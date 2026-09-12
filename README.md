@@ -1,24 +1,29 @@
 # 🌉 Bharat Global Pay Bridge
-### Solving Cross-Border Payment Failures for Sanctioned Countries
+### A Legal Solution for Blocked Cross-Border Payments
 
-**By Sai Sridurga | kakinada, Andhra Pradesh**
+**By Sai Sridurga | Aspiring Python Developer | Rajahmundry, AP**
 
-### 🚨 Problem Statement
-- Iran, Russia, Syria, North Korea lanti countries ki international banks payments block chestunnayi (OFAC/SWIFT Sanctions)
-- Indians abroad can't send money home legally with low fees
-- Bank fees: 8-12%, Time: 3-5 days
+#### 🚨 Problem
+People in Iran, Russia, Syria can't receive money. Banks block due to sanctions, charge 8-12% fee, take 3-5 days.
 
-### 💡 My Solution
-A **Legal, Compliant Mobile Money Bridge** that uses:
-- Mobile wallets + regulated crypto bridge
-- Fee: Only 2% | Time: 5 minutes | 100% Legal
+#### 💡 My Solution
+A Python-based Sanction Detection Engine + Legal Mobile Money Bridge Concept.
+- Fee: 2% only
+- Time: 5 Minutes
+- 100% Legal & Compliant
 
-### 🛠️ Tech Stack
+#### 🛠️ Tech Stack
 - Python
-- Logic: Sanction detection engine
-- Future: API integration with UPI & Mobile Money
+- Streamlit (for Live Website)
+- FinTech Logic
 
-### ▶️ How to Run
-```bash
-python app.py
-# Enter Country: iran -> Shows blocked + my solution
+#### ▶️ Live Demo
+Streamlit App Link: (After deployment paste here)
+
+#### 👨‍💻 About Me
+Looking for Python Developer / Intern roles.
+LinkedIn: https://www.linkedin.com/in/sai-sridurga-b142083a3?utm_source=share_via..
+Location: kakinada, Andhra Pradesh
+
+#### 🔗 GitHub
+https://github.com/bharat-bio-saisrivardhan/Bharat-global-pay-bridge
