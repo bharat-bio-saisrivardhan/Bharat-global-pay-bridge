@@ -18,7 +18,7 @@ A Python-based Sanction Detection Engine + Legal Mobile Money Bridge Concept.
 - FinTech Logic
 
 #### ▶️ Live Demo
-Streamlit App Link: (After deployment paste here)
+Streamlit App Link: https://bharat-global-pay-bridge.streamlit.app/
 
 #### 👨‍💻 About Me
 Looking for Python Developer / Intern roles.
