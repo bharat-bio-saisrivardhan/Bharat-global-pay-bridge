@@ -1,29 +1,32 @@
-# Bharat-Global-Pay-Bridge - by Sai Srivardhan
-# Hackathon Project - Solves Cross Border Payment Blocks
+import streamlit as st
 
-def check_transfer(country):
-    blocked_countries = {
-        "iran": "OFAC Sanctions - US Ban",
-        "north korea": "UN Sanctions",
-        "syria": "USA & EU Ban",
-        "russia": "SWIFT Network Blocked",
-        "belarus": "EU Sanctions"
-    }
+st.set_page_config(page_title="Bharat Pay Bridge", page_icon="🌉")
 
-    c = country.lower().strip()
-    if c in blocked_countries:
-        print(f"\n{c.upper()} - PAYMENT BLOCKED!")
-        print(f"Reason: {blocked_countries[c]}")
-        print("\n--- MY SOLUTION ---")
-        print("Bharat Global Pay Bridge:")
-        print("1. Mobile Money + Crypto Bridge")
-        print("2. 100% Legal & Compliant")
-        print("3. Low Fee: Only 2% vs 8% bank")
-        print("4. Instant Transfer in 5 mins")
+st.title("🌉 Bharat Global Pay Bridge")
+st.markdown("**Solving Cross-Border Payments for Sanctioned Countries | Built by Sai Srivardhan, Rajahmundry**")
+st.divider()
+
+country = st.text_input("🌍 Recipient Country - Enter Country Name", "Iran")
+
+sanctioned_list = ["iran", "russia", "syria", "north korea", "cuba", "belarus", "venezuela"]
+
+if country:
+    if country.lower() in sanctioned_list:
+        st.error(f"🚫 PAYMENT BLOCKED DUE TO SANCTIONS to {country.upper()}")
+        st.write("Direct bank transfer is blocked due to OFAC/SWIFT sanctions.")
+        
+        st.success("✅ **Legal Mobile Money Bridge - Compliant Solution Available**")
+        c1, c2 = st.columns(2)
+        c1.metric("Our Fee", "2%", "-6% vs Banks")
+        c2.metric("Transfer Time", "5 Mins", "Fast")
+        
+        st.info("How? Via licensed mobile wallets + RBI approved partner corridor. 100% Legal.")
+        
+        if st.button("🔒 Proceed via Legal Bridge (DEMO)", type="primary"):
+            st.balloons()
+            st.success("SUCCESS! Transfer Initiated\n\nAmount: ₹10,000\nFee: ₹200\nTotal: ₹10,200")
     else:
-        print(f"\n{c.upper()} - PAYMENT ALLOWED")
-        print("Fee: 2% | Time: 5 mins")
+        st.success(f"✅ Payment to {country} is ALLOWED via SWIFT banking - No restrictions.")
 
-print("=== Bharat Global Pay Bridge ===")
-country = input("Enter Country Name: ")
-check_transfer(country)
+st.divider()
+st.caption("Tech: Python + Streamlit | For Job Portfolio | Contact: LinkedIn")
